@@ -59,6 +59,10 @@ body {
 	background-color: #111;
 }
 
+/*.active {
+	background-color: #04AA6D;
+  }*/
+
 
 /* TABLE */
 
@@ -71,4 +75,10 @@ body {
 /* LIST TYPES */
 .square {
 	list-style-type: square;
+}
+
+/* Device Info in News Page */
+.device-image {
+	width: 20%;
+	height: 20%;
 }
