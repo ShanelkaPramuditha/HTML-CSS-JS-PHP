@@ -1,14 +1,17 @@
+/* BODY */
+
 body {
 	background-image: url("../images/background.jpg");
 }
+
+/* LOGO AND MAIN HEADER */
 
 .logo {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	width: 200px;
-	height: 200px;
-	text-align: center;
+	width: 10%;
+	height: 10%;
 }
 
 .font-h1 {
@@ -24,22 +27,24 @@ body {
 }
 
 .h-line {
-	border-top: 2px solid black;
+	border-top: 1px solid black;
 	margin: 0;
 }
+
+/* NAVIGATION BAR */
 
 #navigation {
 	list-style-type: none;
 	font-size: 20px;
-	margin: 0px;
-	padding: 0px;
+	margin: 10px 0 10px 0;
+	padding: 0;
+	overflow: hidden;
 	background-color: gray;
 	width: 100%
 }
 
 #navigation li {
 	float: left;
-	margin: 10px 0px 10px 0px;
 }
 
 #navigation li a {
@@ -50,13 +55,20 @@ body {
 	text-decoration: none;
 }
 
-table, td, th {
+#navigation li a:hover {
+	background-color: #111;
+}
+
+
+/* TABLE */
+
+.productData {
 	border: 2px solid gray;
 	color: black;
 	background-color: white;
 }
 
-table {
-	width: 100%;
-	border-collapse: collapse;
+/* LIST TYPES */
+.square {
+	list-style-type: square;
 }
