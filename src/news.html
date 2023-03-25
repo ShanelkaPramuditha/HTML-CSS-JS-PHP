@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>My Shopping Cart</title>
+		<link rel="stylesheet" href="styles/styles.css">
+
+		<script>
+            var date = new Date().getDate();
+            var month = new Date().getMonth() + 1;
+            var year = new Date().getFullYear();
+            //const full_date = new Date().toLocaleDateString();
+
+			document.write(date + "/" + month + "/" + year);
+		</script>
+        <script src="js/myScript.js"></script>
+	</head>
+		
+	<body>
+		<img src="images/logo.png" alt="Cart Logo" class="logo">
+		
+		<h1 class="font-h1"> Shopping Cart </h1>
+		<h2 class="font-h2"> The online shopping store </h2>
+		
+		<hr class="h-line">
+		
+		<ul id="navigation">
+			<li><a class="active" href="index.html">Home</a></li>
+			<li><a href="news.html">News</a></li>
+			<li><a href="https://www.google.lk/">Contact</a></li>
+			<li><a href="https://www.google.lk/"> About</a></li>
+		</ul>
+		
+		<button onclick="loadData('iphoneXs')">Iphone XS</button>
+        <button onclick="loadData('iphoneXsMax')">Iphone XS Max</button>
+        <button onclick="loadData('iphone8s')">Iphone 8S Plus</button>
+        <button onclick="loadData('iphoneSe')">Iphone SE</button>
+        <button onclick="priceForLoop()">Average Price</button><br><br>
+
+        <h3 id="device-name">Apple Iphone XS</h3>
+        <img id="device-image" src="images/devices/iphonexs.png" alt="Device Picture">
+        <p id="device-details">Apple iPhone XS mobile was launched in September 2018. The phone comes with a 5.80-inch touchscreen display offering a resolution of 1125x2436 pixels at a pixel density of 458 pixels per inch (ppi). The display sports Other for protection. Apple iPhone XS is powered by a hexa-core Apple A12 Bionic processor. The Apple iPhone XS supports wireless charging, as well as proprietary fast charging.</p>
+
+		<hr class="h-line">
+		
+		<footer align="center">
+			<p> Created by : Shanelka Pramuditha </p>
+			<a href="https://shanelkapramuditha.netlify.app/"> Visit to My Web Site </a>
+		</footer>
+	</body>
+</html>
