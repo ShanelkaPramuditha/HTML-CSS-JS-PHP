@@ -25,14 +25,53 @@ function loadData (data) {
     }
 }
 
+// create product list array
+const productList = ["iphone XS - $1349", "iphone XS Max - $999", "iphone 8S - $1000", "iphone SE - $399"];
+
 function priceForLoop () {
-    const prices = ["iphone XS - $1349", "iphone XS Max - $999", "iphone 8S - $1000", "iphone SE - $399"];
-    let price = "";
-    for (let i = 0; i < prices.length; i++) {
-        price += prices[i] + "<br>" ;
+    let product = "";
+    for (let i = 0; i < productList.length; i++) {
+        product += productList[i] + "<br>" ;
     }
 
     document.getElementById("device-name").innerHTML = "Price List";
-    document.getElementById("device-details").innerHTML = price;
+    document.getElementById("device-details").innerHTML = product;
+    document.getElementById("device-image").style.display = "none";
+}
+
+function productForInLoop() {
+    let product = "";
+    for (let x in productList) {
+        product += productList[x] + "<br>";
+    }
+    document.getElementById("device-name").innerHTML = "Price List";
+    document.getElementById("device-details").innerHTML = product;
+    document.getElementById("device-image").style.display = "none";
+}
+
+// create price list array
+const prices = [1001, 900, 998, 900, 800, 1800];
+
+function priceHigher() {
+    let higherPrice = "";
+    for (let x in prices) {
+        if (prices[x] >= 1000) {
+            higherPrice += prices[x] + "<br>";
+        }
+    }
+    document.getElementById("device-name").innerHTML = "Price List";
+    document.getElementById("device-details").innerHTML = higherPrice;
+    document.getElementById("device-image").style.display = "none";
+}
+
+function priceLower() {
+    let lowerPrice = "";
+    for (let x in prices) {
+        if (prices[x] < 1000) {
+            lowerPrice += prices[x] + "<br>";
+        }
+    }
+    document.getElementById("device-name").innerHTML = "Price List";
+    document.getElementById("device-details").innerHTML = lowerPrice;
     document.getElementById("device-image").style.display = "none";
 }
