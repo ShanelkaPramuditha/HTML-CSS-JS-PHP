@@ -82,3 +82,8 @@ body {
 	width: 20%;
 	height: 20%;
 }
+
+/* Registration Form */
+fieldset {
+	background-color:rgb(238, 229, 229);
+}
