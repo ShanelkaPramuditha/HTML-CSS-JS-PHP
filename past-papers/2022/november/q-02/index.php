@@ -3,7 +3,13 @@
    <head>
       <title>2022 November</title>
       <style>
-         /* Part d) Change background color in multiplication table */
+         /* Part d) Change background color in multiplication table
+         <style>
+            table {
+               background-color: #bde9ba;
+            }
+         </style>
+         */
          table {
             background-color: #bde9ba; /* Answer */
             border-collapse: collapse;
