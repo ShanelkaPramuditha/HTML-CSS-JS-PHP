@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Vehicle Details</title>
+   </head>
+   <body>
+      <!-- Part a) create form -->
+      <form method="POST" action="./insert_fueldetail.php">
+         <fieldset>
+            <legend>Vehicle Owner Details</legend>
+
+            <label>Owner Name:</label><br>
+            <input type="text" name="o_name"><br>
+
+            <label>Mobile Number:</label><br>
+            <input type="text" name="mobile_num"><br>
+
+            <label>Email:</label><br>
+            <input type="email" name="email"><br>
+
+            <label>Address:</label><br>
+            <textarea cols="35" rows="4" name="address"></textarea><br>
+         </fieldset>
+
+         <fieldset>
+            <legend>Vehicle Details</legend>
+
+            <label>Fuel type:</label><br>
+            <select name="fuel_type">
+               <option value="petrol">Petrol</option>
+               <option value="diesel">Diesel</option>
+               <option value="kerosene">Kerosene</option>
+            </select><br><br>
+
+            <label>Vehicle Number:</label><br>
+            <input type="text" name="vehicle_num"><br>
+
+            <label>Air Condition</label><br><br>
+            <input type="radio" name="ac_status" value="with_ac">
+            <label>With AC</label>
+            <input type="radio" name="ac_status" value="without_ac">
+            <label>Without AC</label><br><br>
+         </fieldset>
+
+         <fieldset>
+            <legend>Fuel Details</legend>
+
+            <label>Pumped Date:</label>
+            <input type="date" name="pumped_date"><br><br>
+
+            <label>Number of Litres:</label><br>
+            <select name="litres">
+               <option value="1">1</option>
+               <option value="2">2</option>
+               <option value="3">3</option>
+               <option value="4">4</option>
+               <option value="5">5</option>'
+            </select>
+            <br><br>
+            
+            <button type="submit">Submit</button>
+         </fieldset>
+      </form>
+   </body>
+</html>
